@@ -1,4 +1,4 @@
-
+package Arquitecturall.Arquitectura;
 /*
 Fecha: 19/01/2022
 Autores: Maria Camila Rodriguez, Juan David Olaya.
@@ -15,7 +15,7 @@ public class proyecto1 {
     }
 
     public void recorrido() {
-        float deltaTime = 0.093f;
+        float deltaTime = 0.09375f;
         float time = 0.0f;
         float Vx = 92.25f; // velocidad de despegue
         float v = 0; // velox actual
@@ -29,7 +29,8 @@ public class proyecto1 {
             v = (a * time);
             x = ((v * v)) / (2 * a);
             i++;
-            System.out.println("Distancia recorrida: " + x + " Velocidad actual: " + v);
+            System.out.println("Distancia Recorrida: "+x+
+            " Velocidad: "+v);
             if (v >= Vx) {
                 System.out.println("Despegue");
                 break;
